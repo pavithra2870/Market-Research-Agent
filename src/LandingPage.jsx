@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, TrendingUp, BarChart3, Shield, Activity, Target, FileText } from 'lucide-react';
 import './LandingPage.css';
+import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   const titleVariants = {
     hidden: { 
       opacity: 0, 
@@ -63,21 +65,21 @@ const LandingPage = () => {
             initial="hidden"
             animate="visible"
           >
-            <button 
-              className="btn btn-primary"
-              onClick={() => window.location.href = '/product'}
-            >
-              Research a Product
-              <ArrowRight size={20} />
-            </button>
+           <button
+  className="btn btn-primary"
+  onClick={() => navigate('/product')}
+>
+  Research a Product
+  <ArrowRight size={20} />
+</button>
             
-            <button 
-              className="btn btn-secondary"
-              onClick={() => window.location.href = '/research'}
-            >
-              Research a Market
-              <ArrowRight size={20} />
-            </button>
+            <button
+  className="btn btn-secondary"
+  onClick={() => navigate('/research')}
+>
+  Research a Market
+  <ArrowRight size={20} />
+</button>
             
             <button 
               className="btn btn-ghost"
