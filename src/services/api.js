@@ -3,7 +3,7 @@ import axios from 'axios';
 // 1. Get the Space URL and Secret Key from Vite environment variables
 // Make sure these are defined in your Render Dashboard / .env file
 const API_URL = import.meta.env.VITE_APP_GATEWAY_URL || 'http://127.0.0.1:7860';
-const GATEWAY_KEY = import.meta.env.VITE_APP_GATEWAY_SECRET_KEY;
+const GATEWAY_KEY = import.meta.env.VITE_APP_GATEWAY_KEY;
 
 console.log(API_URL)
 console.log(GATEWAY_KEY)
