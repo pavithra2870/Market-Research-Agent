@@ -5,6 +5,9 @@ import axios from 'axios';
 const API_URL = import.meta.env.VITE_APP_GATEWAY_URL || 'http://127.0.0.1:7860';
 const GATEWAY_KEY = import.meta.env.VITE_APP_GATEWAY_SECRET_KEY;
 
+console.log(API_URL)
+console.log(GATEWAY_KEY)
+
 // Create an axios instance to avoid repeating headers
 const apiClient = axios.create({
   baseURL: API_URL,
